@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-    <h1>Legal Service Provider</h1>
+    <h1 className='text-4xl'>Legal Service Provider</h1>
     </>
   )
 }
