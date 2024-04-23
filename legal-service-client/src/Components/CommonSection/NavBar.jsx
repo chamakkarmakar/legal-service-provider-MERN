@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { HiOutlineMenu } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi"; 
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
+    let [scroll, setScroll] = useState(false);
     const menuItems = [
         {
             menu: 'home',
@@ -27,13 +28,30 @@ const NavBar = () => {
             url: '/login'
         }
     ]
+
+    const handleOnScroll = () => {
+        const isScrolled = window.scrollY > 0;
+         setScroll(isScrolled);
+         // console.log(scroll);
+       }
+       useEffect(() => {
+         window.addEventListener('scroll', handleOnScroll);
+     
+         // Remove scroll event listener when the component unmounts
+         return () => {
+           window.removeEventListener('scroll', handleOnScroll);
+         };
+     
+       }, [])
+
+
     return (
         <div className="sticky top-0 max-w-full">
-      <div className=' bg-center bg-cover bg-no-repeat py-3'>
+      <div className={`py-3 ${scroll ? 'bg-sky-500' : 'bg-transparent'}`}>
         <nav className="flex justify-between items-center w-full">
           <div className='md:w-1/5 w-4/5 md:mx-10 mx-5 transition-all duration-150 ease-linear delay-75 flex items-center'>
             {/* <img src={logo} alt="" className='w-1/6' /> */}
-            <h1 className='md:text-3xl text-2xl text-center block font-semibold text-dark font-style mx-2'>Coffee Store</h1>
+            <h1 className='md:text-3xl text-white text-2xl text-center block font-semibold text-dark font-style mx-2'>Attorney@Law</h1>
           </div>
 
           <div className="md:w-96 w-full md:mx-10 mx-0 ">

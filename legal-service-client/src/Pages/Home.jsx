@@ -1,14 +1,11 @@
 import React from 'react'
-import NavBar from '../Components/CommonSection/NavBar'
-import { Outlet } from "react-router-dom";
-import Footer from '../Components/CommonSection/Footer';
+import Banner from '../Components/Banner/Banner'
+
 
 const Home = () => {
   return (
     <div>
-      <NavBar />
-      <Outlet />
-      <Footer />
+      <Banner />
     </div>
   )
 }
