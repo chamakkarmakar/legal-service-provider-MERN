@@ -47,7 +47,7 @@ const NavBar = () => {
 
     return (
         <div className="sticky top-0 max-w-full">
-      <div className={`py-3 ${scroll ? 'bg-sky-500' : 'bg-transparent'}`}>
+      <div className={`py-3 ${scroll ? 'bg-sky-800' : 'bg-transparent'}`}>
         <nav className="flex justify-between items-center w-full">
           <div className='md:w-1/5 w-4/5 md:mx-10 mx-5 transition-all duration-150 ease-linear delay-75 flex items-center'>
             {/* <img src={logo} alt="" className='w-1/6' /> */}
@@ -63,7 +63,7 @@ const NavBar = () => {
                   <Link key={item.menu}
                     onClick={() => setOpen(!open)}
                     to={item.url}
-                    className='text-sky-900 text-center md:w-auto w-full md:mt-0 mt-3 font-bold capitalize px-3 py-1 rounded hover:shadow-sm'
+                    className='text-white text-center md:w-auto w-full md:mt-0 mt-3 font-bold capitalize px-3 py-1 rounded hover:shadow-sm'
                   >{item.menu}</Link>
                 )
               }

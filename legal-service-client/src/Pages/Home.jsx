@@ -1,11 +1,13 @@
 import React from 'react'
 import Banner from '../Components/Banner/Banner'
+import About from '../Components/AboutUs/About'
 
 
 const Home = () => {
   return (
     <div>
       <Banner />
+      <About />
     </div>
   )
 }
