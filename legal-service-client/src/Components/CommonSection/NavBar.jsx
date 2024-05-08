@@ -63,7 +63,7 @@ const NavBar = () => {
                   <Link key={item.menu}
                     onClick={() => setOpen(!open)}
                     to={item.url}
-                    className='text-white text-center md:w-auto w-full md:mt-0 mt-3 font-bold capitalize px-3 py-1 rounded hover:shadow-sm'
+                    className='text-white text-center md:w-auto w-full md:mt-0 mt-3 font-bold capitalize px-3 py-1 rounded hover:text-amber-700 hover:shadow-sm'
                   >{item.menu}</Link>
                 )
               }
