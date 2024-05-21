@@ -47,11 +47,13 @@ const Services = () => {
     return (
         <div className='bg-zinc-300 mt-20 pb-32 pt-20'>
             <div className="w-10/12 mx-auto">
-                <div className='text-center w-3/5 mx-auto pb-20 font-serif'>
+
+                <div className='text-center md:w-3/5 w-full mx-auto pb-20 font-serif'>
                     <p className='text-amber-600 text-md'>Our Services</p>
-                    <h2 className='text-5xl'>Creative Solutions For Legal Problems</h2>
+                    <h2 className='md:text-5xl text-3xl'>Creative Solutions For Legal Problems</h2>
                 </div>
-                <div className='grid grid-cols-4 gap-x-10 gap-y-32'>
+                
+                <div className='grid md:grid-cols-4 grid-cols-1 gap-x-10 gap-y-32'>
                     {
                         services.map(service =>
                             <div key={service.id} className='text-center'>

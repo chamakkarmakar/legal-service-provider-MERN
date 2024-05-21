@@ -50,7 +50,7 @@ const Banner = () => {
 
         <div className='mt-40 mb-20 text-white w-3/4 mx-auto grid md:grid-cols-4 grid-cols-2 gap-10'>
           <div>
-            <h2 className='text-7xl'>
+            <h2 className='md:text-7xl text-5xl'>
            {scroll ?  <CountUp
               start={0}
               end={26}
@@ -60,7 +60,7 @@ const Banner = () => {
             <p className='text-lg mt-4'>Years Experience</p>
           </div>
           <div>
-            <h2 className='text-7xl'>
+            <h2 className='md:text-7xl text-5xl'>
            {scroll ?  <CountUp
               start={910}
               end={940}
@@ -70,7 +70,7 @@ const Banner = () => {
             <p className='text-lg mt-4'>Trusted Clients</p>
           </div>
           <div>
-            <h2 className='text-7xl'>
+            <h2 className='md:text-7xl text-5xl'>
            {scroll ?  <CountUp
               start={55}
               end={85}
@@ -80,7 +80,7 @@ const Banner = () => {
             <p className='text-lg mt-4'>Award Winning</p>
           </div>
           <div>
-            <h2 className='text-7xl'>
+            <h2 className='md:text-7xl text-5xl'>
            {scroll ?  <CountUp
               start={240}
               end={270}
